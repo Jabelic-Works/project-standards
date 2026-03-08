@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2023"],
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@jabelic/standards-core": ["packages/core/src/index.ts"],
+      "@jabelic/eslint-config": ["packages/eslint-config/src/index.ts"],
+      "@jabelic/eslint-config/base": ["packages/eslint-config/src/index.ts"],
+      "@jabelic/renovate-config": ["packages/renovate-config/src/index.ts"],
+      "@jabelic/renovate-config/base": ["packages/renovate-config/src/index.ts"]
+    },
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "composite": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
+  }
+}

@@ -1,0 +1,12 @@
+---
+description: Repository standards baseline for managed projects
+globs:
+  - "**/*"
+alwaysApply: false
+---
+
+# managed-by: @jabelic/standards
+
+- Prefer shared config packages over copying large config blocks into repositories.
+- Use `standards diff` before `standards apply` when updating an existing repository.
+- Keep repository-specific notes in unmanaged sections or repository-local files.

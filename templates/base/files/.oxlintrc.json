@@ -1,0 +1,9 @@
+{
+  "plugins": ["typescript", "unicorn"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error",
+    "pedantic": "warn"
+  },
+  "ignorePatterns": ["dist/**", "coverage/**", "node_modules/**"]
+}
