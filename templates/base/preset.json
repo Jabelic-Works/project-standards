@@ -1,0 +1,63 @@
+{
+  "name": "base",
+  "version": "0.1.0",
+  "description": "Base standards preset for bootstrapping repository quality files.",
+  "files": [
+    {
+      "source": "renovate.json",
+      "target": "renovate.json",
+      "strategy": "create_if_missing",
+      "tags": ["quality", "renovate"],
+      "description": "Baseline Renovate configuration"
+    },
+    {
+      "source": "eslint.config.mjs",
+      "target": "eslint.config.mjs",
+      "strategy": "replace_if_managed",
+      "tags": ["quality", "eslint"],
+      "description": "Repository ESLint entrypoint that points at the shared config package"
+    },
+    {
+      "source": ".oxlintrc.json",
+      "target": ".oxlintrc.json",
+      "strategy": "create_if_missing",
+      "tags": ["quality", "oxlint"],
+      "description": "Baseline Oxlint configuration"
+    },
+    {
+      "source": ".oxfmtrc.json",
+      "target": ".oxfmtrc.json",
+      "strategy": "create_if_missing",
+      "tags": ["quality", "oxformat"],
+      "description": "Baseline Oxfmt configuration"
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "AGENTS.md",
+      "strategy": "replace_if_managed",
+      "tags": ["ai"],
+      "description": "Repository-local instructions for coding agents"
+    },
+    {
+      "source": "CLAUDE.md",
+      "target": "CLAUDE.md",
+      "strategy": "replace_if_managed",
+      "tags": ["ai"],
+      "description": "Repository-local instructions for Claude"
+    },
+    {
+      "source": ".cursor/rules/repository-standards.mdc",
+      "target": ".cursor/rules/repository-standards.mdc",
+      "strategy": "replace_if_managed",
+      "tags": ["ai", "cursor"],
+      "description": "Cursor rule for repository standards"
+    },
+    {
+      "source": ".cursor/commands/quality-check.md",
+      "target": ".cursor/commands/quality-check.md",
+      "strategy": "replace_if_managed",
+      "tags": ["ai", "cursor", "quality"],
+      "description": "Cursor command for running repository quality checks"
+    }
+  ]
+}
