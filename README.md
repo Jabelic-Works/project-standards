@@ -4,6 +4,25 @@
 
 It keeps the real configuration sources and the applying CLI together so that new and existing repositories can adopt the same baseline with a small, reviewable diff.
 
+## Documentation
+
+Structured docs live in `docs/` and are intended to make reviews and spec discussions easier.
+
+The VitePress docs support both English and Japanese.
+
+- overview: `docs/index.md`
+- concepts and file strategies: `docs/concepts.md`
+- CLI behavior: `docs/cli.md`
+- base preset details: `docs/templates/base.md`
+- roadmap and deferred work: `docs/roadmap.md`
+- Japanese pages: `docs/ja/`
+
+To run the docs locally:
+
+```sh
+pnpm docs:dev
+```
+
 ## What This Repository Does
 
 This repository is designed around three responsibilities:
