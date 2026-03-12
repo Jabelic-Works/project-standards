@@ -1,0 +1,11 @@
+---
+description: Check remote and branch drift before editing
+alwaysApply: true
+---
+
+# Git Remote Preflight
+
+- Before starting substantive work, check the current branch, its upstream, and whether the base branch has moved on the remote.
+- Confirm whether local work differs from `origin/<current-branch>` and whether `main` is behind `origin/main` when that affects the task.
+- If the repository state is not what the user likely expects, pause and explain the mismatch before editing, committing, or opening a `Pull Request`.
+- Do not treat generated files alone as proof that source files changed; first confirm whether they come from branch drift, local installs, or build output.
