@@ -1,5 +1,9 @@
 import { defineConfig } from "vitepress";
 
+const repositoryName = process.env.GITHUB_REPOSITORY?.split("/")[1];
+const base =
+  process.env.GITHUB_ACTIONS && repositoryName ? `/${repositoryName}/` : "/";
+
 const englishNav = [
   { text: "Overview", link: "/" },
   { text: "Concepts", link: "/concepts" },
@@ -45,6 +49,7 @@ const japaneseSidebar = [
 export default defineConfig({
   title: "Project Standards",
   description: "Shared repository standards, templates, and CLI workflows.",
+  base,
   lastUpdated: true,
   themeConfig: {
     socialLinks: [

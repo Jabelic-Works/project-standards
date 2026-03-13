@@ -9,6 +9,7 @@ It keeps the real configuration sources and the applying CLI together so that ne
 Structured docs live in `docs/` and are intended to make reviews and spec discussions easier.
 
 The VitePress docs support both English and Japanese.
+Docs are intended to deploy to GitHub Pages from `main` via GitHub Actions.
 
 - overview: `docs/index.md`
 - concepts and file strategies: `docs/concepts.md`
