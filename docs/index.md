@@ -1,18 +1,17 @@
 # Project Standards
 
-`project-standards` is a pnpm monorepo for managing repository standards in one place.
+`project-standards` is a pnpm monorepo that helps teams roll out repository standards with a small, reviewable diff.
 
-It keeps the real configuration sources and the applying CLI together so that new and existing repositories can adopt the same baseline with a small, reviewable diff.
+It combines shared config packages, repository templates, and a CLI so teams can adopt a common baseline without copying large configuration blocks into every repository.
 
-## What this repository does
+## What teams get
 
-This repository combines three responsibilities:
+- a `base` preset for repository quality and AI-facing guidance
+- a safe `diff` / `apply` workflow for existing repositories
+- an `init` flow for new repositories
+- shared config packages that keep standards centralized
 
-- shared configuration packages for tools that should be referenced instead of copied
-- repository templates for files that must exist inside each target repository
-- a Node.js CLI that can plan, diff, and apply those files safely
-
-The current MVP focuses on a small base preset with:
+## Included in the base preset
 
 - Renovate baseline config
 - shared ESLint flat config with Stylistic rules
@@ -24,7 +23,12 @@ The current MVP focuses on a small base preset with:
 - [Concepts](./concepts.md)
 - [CLI](./cli.md)
 - [Base Template](./templates/base.md)
-- [Roadmap](./roadmap.md)
+
+## Typical adoption flow
+
+1. Preview a repository with `diff`.
+2. Review the proposed changes.
+3. Apply the preset once the diff looks right.
 
 ## Workspace layout
 

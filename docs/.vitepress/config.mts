@@ -9,7 +9,6 @@ const englishNav = [
   { text: "Concepts", link: "/concepts" },
   { text: "CLI", link: "/cli" },
   { text: "Base Template", link: "/templates/base" },
-  { text: "Roadmap", link: "/roadmap" },
 ];
 
 const englishSidebar = [
@@ -20,7 +19,6 @@ const englishSidebar = [
       { text: "Concepts", link: "/concepts" },
       { text: "CLI", link: "/cli" },
       { text: "Base Template", link: "/templates/base" },
-      { text: "Roadmap", link: "/roadmap" },
     ],
   },
 ];
@@ -30,7 +28,6 @@ const japaneseNav = [
   { text: "基本概念", link: "/ja/concepts" },
   { text: "CLI", link: "/ja/cli" },
   { text: "Base Template", link: "/ja/templates/base" },
-  { text: "ロードマップ", link: "/ja/roadmap" },
 ];
 
 const japaneseSidebar = [
@@ -41,7 +38,6 @@ const japaneseSidebar = [
       { text: "基本概念", link: "/ja/concepts" },
       { text: "CLI", link: "/ja/cli" },
       { text: "Base Template", link: "/ja/templates/base" },
-      { text: "ロードマップ", link: "/ja/roadmap" },
     ],
   },
 ];

@@ -2,13 +2,17 @@
 
 ## コマンド
 
-初期の CLI entrypoint では、次のコマンドを提供しています。
+公開している利用フローでは、次の 3 つのコマンドを中心に使います。
 
 - `init`
 - `apply`
 - `diff`
-- stub の `doctor`
-- stub の `upgrade`
+
+## 各コマンドの役割
+
+- `init`: baseline preset から新しいリポジトリディレクトリを作る
+- `diff`: preset を適用したときの差分を既存リポジトリに対して確認する
+- `apply`: レビュー済みの変更を対象リポジトリへ書き込む
 
 ## 基本的な使い方
 
@@ -57,9 +61,3 @@ node packages/cli/dist/index.js apply ../target-repository --include quality --d
 ```sh
 node packages/cli/dist/index.js init ../new-repository --yes
 ```
-
-## 現時点の制約
-
-- stack composition は将来の preset composition 用に予約されている
-- target repository 側の dependency installation はまだ自動化していない
-- partially managed file に対する richer merge behavior は後続対応

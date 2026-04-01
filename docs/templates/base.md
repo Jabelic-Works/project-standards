@@ -19,13 +19,13 @@ The current preset includes:
 - `.cursor/rules/repository-standards.mdc`
 - `.cursor/commands/quality-check.md`
 
-## Important MVP notes
+## What target repositories should expect
 
 - `eslint.config.mjs` assumes the target repository also installs `@jabelic/eslint-config`
-- `AGENTS.md` and `CLAUDE.md` are managed base stubs; stack-specific composition is reserved for later
-- some files are create-only scaffolding and are not yet upgraded automatically once a repository diverges
+- `AGENTS.md` and `CLAUDE.md` are managed starter documents for AI tooling
+- some files are created only when missing, while managed files can be updated on later runs
 
-## Why the preset is conservative
+## How updates stay safe
 
 The preset is intentionally cautious because it is designed to work for both new and existing repositories.
 
@@ -34,4 +34,4 @@ That is why the planner prefers:
 - create-only behavior for files that are risky to overwrite blindly
 - replacement only when a managed marker proves that the tool owns the file
 
-This conservative behavior keeps the initial rollout reviewable while leaving room for richer merge strategies later.
+This keeps adoption reviewable and predictable.

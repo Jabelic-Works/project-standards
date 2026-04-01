@@ -1,18 +1,17 @@
 # Project Standards
 
-`project-standards` は、リポジトリ標準を 1 か所で管理するための pnpm モノレポです。
+`project-standards` は、共有リポジトリ標準を小さくレビューしやすい差分で導入するための pnpm モノレポです。
 
-実際の設定ソースと、それを適用する CLI を同じ場所に置くことで、新規リポジトリにも既存リポジトリにも、小さくレビューしやすい差分で同じベースラインを導入できるようにします。
+shared config package、repository template、CLI を 1 か所にまとめることで、大きな設定のコピペを避けながら共通 baseline を展開できます。
 
-## このリポジトリが担うこと
+## このプロダクトでできること
 
-このリポジトリは、次の 3 つの責務をまとめています。
+- repository quality と AI 向けガイダンスをまとめた `base` preset
+- 既存リポジトリ向けの安全な `diff` / `apply` フロー
+- 新規リポジトリ向けの `init` フロー
+- 標準設定を中央管理しやすい shared config package
 
-- 各リポジトリに設定をコピーしすぎずに使える shared config package
-- 対象リポジトリ内に実在すべきファイルを配る template
-- それらの差分を plan / diff / apply できる Node.js CLI
-
-現在の MVP は、小さな `base` preset を中心にしています。
+## `base` preset に含まれるもの
 
 - Renovate のベース設定
 - Stylistic ルールを含む shared ESLint flat config
@@ -24,7 +23,12 @@
 - [基本概念](./concepts.md)
 - [CLI](./cli.md)
 - [Base Template](./templates/base.md)
-- [ロードマップ](./roadmap.md)
+
+## 基本的な導入フロー
+
+1. `diff` で対象リポジトリに入る差分を確認する
+2. 提案された変更内容をレビューする
+3. 問題がなければ preset を適用する
 
 ## ワークスペース構成
 

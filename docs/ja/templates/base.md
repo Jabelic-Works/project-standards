@@ -19,13 +19,13 @@
 - `.cursor/rules/repository-standards.mdc`
 - `.cursor/commands/quality-check.md`
 
-## MVP 時点で重要な前提
+## target repository 側で把握しておくこと
 
 - `eslint.config.mjs` は、target repository 側でも `@jabelic/eslint-config` を install している前提
-- `AGENTS.md` と `CLAUDE.md` は managed な base stub であり、stack ごとの composition は後続対応
-- 一部の file は create-only な scaffold であり、repository が分岐した後に自動更新される設計にはまだなっていない
+- `AGENTS.md` と `CLAUDE.md` は AI tooling 向けの managed starter document
+- 一部の file は不足時のみ作成され、managed file は後続実行で更新される
 
-## なぜ保守的なのか
+## どう安全性を保つか
 
 この preset は、新規リポジトリと既存リポジトリの両方に安全に適用することを優先しているため、意図的に保守的です。
 
@@ -34,4 +34,4 @@
 - むやみに上書きすると危険な file では create-only に寄せる
 - managed marker でツール所有と判定できる file だけを置き換える
 
-この保守的な挙動によって、初期導入をレビューしやすくしつつ、将来 richer merge strategy へ拡張する余地を残しています。
+この挙動によって、初期導入をレビューしやすく予測可能に保てます。

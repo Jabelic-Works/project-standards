@@ -2,15 +2,19 @@
 
 ## Commands
 
-The initial CLI entrypoint supports:
+The documented workflow uses three commands:
 
 - `init`
 - `apply`
 - `diff`
-- `doctor` as a stub
-- `upgrade` as a stub
 
-## Typical workflow
+## When to use each command
+
+- `init`: create a new repository directory from the baseline preset
+- `diff`: preview the changes a preset would make to an existing repository
+- `apply`: write the reviewed changes to the target repository
+
+## Recommended workflow
 
 For an existing repository:
 
@@ -57,9 +61,3 @@ Initialize a new repository directory:
 ```sh
 node packages/cli/dist/index.js init ../new-repository --yes
 ```
-
-## Current limitations
-
-- stack composition is reserved for future preset composition
-- dependency installation in target repositories is not yet automated
-- richer merge behavior for partially managed files is deferred
