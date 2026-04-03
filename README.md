@@ -9,6 +9,7 @@ It combines shared config packages, repository templates, and a CLI so teams can
 Product documentation lives in `docs/` and is published as a VitePress site in English and Japanese.
 
 - overview: `docs/index.md`
+- adoption playbook: `docs/adoption-playbook.md`
 - concepts and safety model: `docs/concepts.md`
 - CLI usage: `docs/cli.md`
 - base preset details: `docs/templates/base.md`

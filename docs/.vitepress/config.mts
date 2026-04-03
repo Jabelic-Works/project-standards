@@ -7,6 +7,7 @@ const base =
 const englishNav = [
   { text: "Overview", link: "/" },
   { text: "Concepts", link: "/concepts" },
+  { text: "Adoption", link: "/adoption-playbook" },
   { text: "CLI", link: "/cli" },
   { text: "Base Template", link: "/templates/base" },
 ];
@@ -17,6 +18,7 @@ const englishSidebar = [
     items: [
       { text: "Overview", link: "/" },
       { text: "Concepts", link: "/concepts" },
+      { text: "Adoption Playbook", link: "/adoption-playbook" },
       { text: "CLI", link: "/cli" },
       { text: "Base Template", link: "/templates/base" },
     ],
@@ -26,6 +28,7 @@ const englishSidebar = [
 const japaneseNav = [
   { text: "概要", link: "/ja/" },
   { text: "基本概念", link: "/ja/concepts" },
+  { text: "導入", link: "/ja/adoption-playbook" },
   { text: "CLI", link: "/ja/cli" },
   { text: "Base Template", link: "/ja/templates/base" },
 ];
@@ -36,6 +39,7 @@ const japaneseSidebar = [
     items: [
       { text: "概要", link: "/ja/" },
       { text: "基本概念", link: "/ja/concepts" },
+      { text: "導入プレイブック", link: "/ja/adoption-playbook" },
       { text: "CLI", link: "/ja/cli" },
       { text: "Base Template", link: "/ja/templates/base" },
     ],

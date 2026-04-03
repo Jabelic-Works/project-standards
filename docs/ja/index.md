@@ -21,6 +21,7 @@ shared config package、repository template、CLI を 1 か所にまとめるこ
 ## 次に読む
 
 - [基本概念](./concepts.md)
+- [導入プレイブック](./adoption-playbook.md)
 - [CLI](./cli.md)
 - [Base Template](./templates/base.md)
 
