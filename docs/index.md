@@ -21,6 +21,7 @@ It combines shared config packages, repository templates, and a CLI so teams can
 ## Read next
 
 - [Concepts](./concepts.md)
+- [Adoption Playbook](./adoption-playbook.md)
 - [CLI](./cli.md)
 - [Base Template](./templates/base.md)
 
